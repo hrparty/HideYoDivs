@@ -1,3 +1,8 @@
+/**
+ * jquery.hideYoDivs.js
+ * Author: Hlynur Tryggvason
+ *
+ */
 (function($){
 
 	var $t,
