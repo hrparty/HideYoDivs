@@ -50,7 +50,7 @@ There are 4 methods available for calling directly:
 
 * **hide:** Immediately hides your elements.
 
-		$('#sidebar').hideYoDivs('hide')
+		$('#sidebar').hideYoDivs('hide');
 
 
 ## Credits
