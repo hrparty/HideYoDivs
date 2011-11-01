@@ -35,6 +35,7 @@ Possible options are:
 ### Methods
 
 There are 4 methods available for calling directly:
+
 * **init:** This is called automatically when you initialize the plugin. 
 	$('#sidebar').hideYoDivs() == $('#sidebar').hideYoDivs('init');
 * **destroy:** Call this to stop using hideYoDivs at any time. See the effects on calling this by clicking 'Disable HideYoDivs' in the demo.
