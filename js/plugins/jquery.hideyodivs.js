@@ -1,7 +1,9 @@
 /**
  * jquery.hideYoDivs.js
- * Author: Hlynur Tryggvason
- *
+ * Author: Hlynur Tryggvason (hrparty)
+ * github.com/hrparty/HideYoDivs
+ * 
+ * Free for everyone to do whatever they want with it.
  */
 (function($){
 
