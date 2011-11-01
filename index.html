@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>HideYoDivs test page</title>
+	<meta name="author" content="Hlynur Tryggvason">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<header>
+			<h1>Hide yo divs test page</h1>
+		</header>
+		
+		<div id="sidebar">
+			<p>Sidebar. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>Page</li>
+					<li>Another page</li>
+					<li>Yet another page</li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div id="main" role="main">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas sem lacinia metus tristique faucibus. Sed convallis suscipit condimentum. Proin blandit tincidunt eros, id suscipit turpis lacinia non. Etiam id laoreet ipsum. Donec ut risus semper nunc mattis varius posuere et ligula. Sed odio turpis, tempor in eleifend in, euismod eu turpis. Donec erat nunc, aliquam ac malesuada a, pharetra et lorem. Suspendisse fringilla dignissim interdum. Proin nec est vitae ante porttitor tempor. Proin posuere, mi eu rutrum pellentesque, turpis mauris ornare leo, at suscipit tortor orci eu justo. Praesent at nisi at magna accumsan blandit eget et neque. Vivamus purus odio, sodales malesuada semper at, varius egestas tellus. Morbi dapibus tincidunt pretium. Morbi at nulla magna, quis pharetra dolor. Ut dignissim congue eros ac vulputate. Duis quis tempor velit.</p>
+
+			<p>Ut et tortor eu erat laoreet euismod. Quisque eget tempus orci. Nam tincidunt pellentesque mi vitae commodo. Sed pellentesque, elit sit amet malesuada varius, leo ante iaculis justo, ut bibendum mi metus id turpis. Etiam tellus libero, commodo a vehicula auctor, auctor in turpis. Nunc sit amet vehicula magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tempor mi sed mauris porta a ornare dolor tristique. Quisque augue purus, euismod at dignissim vel, molestie egestas est. Aenean ac nibh quis ipsum adipiscing aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vel tincidunt risus. Cras odio quam, aliquam ut tristique id, feugiat in velit. Mauris elit elit, rhoncus non dignissim et, tempor sed massa.</p>
+
+			<p>Praesent convallis blandit semper. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tempor, tortor aliquet egestas eleifend, nulla ipsum placerat lacus, sagittis convallis nisl mi nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam metus vitae diam accumsan mattis. Nullam non venenatis mi. Nullam eget nisl purus. Nunc leo ligula, laoreet sit amet rutrum vitae, fringilla sed felis.</p>
+
+			<p>Ut lorem velit, viverra id semper sodales, vehicula ut neque. Quisque id nibh metus. Nulla cursus fringilla hendrerit. Proin consectetur, nisi tristique elementum rhoncus, dui diam volutpat risus, vitae cursus tortor metus nec dui. In hac habitasse platea dictumst. Duis ut leo nisl, sed suscipit nisi. Vivamus orci quam, lobortis vel cursus eget, gravida a justo.</p>
+
+			<p>Nullam rutrum condimentum sapien ac luctus. Nulla quis purus sapien. Nulla nec consectetur ligula. Vivamus varius mi quis augue iaculis dictum. Duis bibendum nulla convallis nulla faucibus quis imperdiet nulla ullamcorper. Nulla vel metus adipiscing sem hendrerit luctus ut nec ipsum. Morbi ante mi, sagittis sit amet tempor nec, congue at turpis. Donec a tellus nec lorem euismod dapibus. Cras posuere suscipit magna, in scelerisque nulla semper ut. Praesent est velit, ultricies ut laoreet eget, rutrum nec nunc.</p>
+
+			<button onclick="disableHideYoDivs()" type="button">Disable HideYoDivs</button>
+			<button onclick="enableHideYoDivs()" type="button">Enable HideYoDivs</button>
+		</div>
+	</div> <!--! end of #container -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<script src="js/plugins/jquery.hideyodivs.js"></script>
+	<script>
+		$('#sidebar').hideYoDivs();
+
+		function disableHideYoDivs() {
+			$('#sidebar').hideYoDivs('destroy');
+		}
+		function enableHideYoDivs() {
+			$('#sidebar').hideYoDivs();
+		}
+	</script>
+</body>
+</html>
