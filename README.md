@@ -36,14 +36,22 @@ Possible options are:
 
 There are 4 methods available for calling directly:
 
-* **init:** This is called automatically when you initialize the plugin. 
+* **init:** This is called automatically when you initialize the plugin.
+ 
 		$('#sidebar').hideYoDivs() == $('#sidebar').hideYoDivs('init');
+
 * **destroy:** Call this to stop using hideYoDivs at any time. See the effects on calling this by clicking 'Disable HideYoDivs' in the demo.
+
 		$('#sidebar').hideYoDivs('destroy');
+
 * **show:** Immediately shows your elements and restarts the timeout.
+
 		$('#sidebar').hideYoDivs('show');
+
 * **hide:** Immediately hides your elements.
+
 		$('#sidebar').hideYoDivs('hide')
+
 
 ## Credits
 
