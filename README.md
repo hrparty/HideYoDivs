@@ -58,3 +58,4 @@ There are 4 methods available for calling directly:
 * Inspired by similar functionality at [xheight.co.uk](http://xheight.co.uk/).
 * Name inspired by [Antoine Dodson](http://en.wikipedia.org/wiki/Antoine_Dodson).
 * Demo/test page is based on [html5boilerplate](http://h5bp.com).
+* Plugin structure is based on the [jQuery plugins authoring tutorial](http://docs.jquery.com/Plugins/Authoring).
