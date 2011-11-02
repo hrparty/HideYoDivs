@@ -24,7 +24,7 @@
 
 			timer = setTimeout(methods.hide, settings.timeout);
 
-    		$(window).bind('mousemove.hideYoDivs touchmove touchstart', function() {
+    		$(window).bind('mousemove.hideYoDivs touchmove.hideYoDivs touchstart.hideYoDivs', function() {
 				methods.show();
 			});
 			
